@@ -25,7 +25,6 @@
                     <table class=" table table-borderless">
                         <thead>
                             <tr>
-                                <th scope="col">Nº</th>
                                 <th scope="col">Nome</th>
                                 <th scope="col">CPF</th>
                                 <th scope="col">E-mail</th>
@@ -36,7 +35,6 @@
                         <tbody>
                             @foreach ($buscarcpf as $row)
                             <tr>
-                                <td>{{@$row->cliente_ID}}</td>
                                 <td>{{@$row->nome}}</td>
                                 <td>{{@$row->cpf}}</td>
                                 <td>{{@$row->email}}</td>
@@ -59,5 +57,10 @@
             </div>
         </div>
     </div>
+    <br>
+    <div class="pagination justify-content-center">
+        {{$buscarcpf->links("pagination::bootstrap-4")}}
+    </div>
 </div>
+
 @endsection
