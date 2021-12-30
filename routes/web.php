@@ -4,14 +4,10 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Auth;
 
-// Route::get("/user", [UserController::class, "index"]);
-// Route::get("/user/{id}", [UserController::class, "show"]);
-// Route::post("/user", [UserController::class, "store"]);
-// Route::put("/user/{id}", [UserController::class, "update"]);
-// Route::delete("/user/{id}", [UserController::class, "destroy"]);
+
 
 Route::get('/', function () {
-    return view('usuario.inicio');
+    return view('auth.login');
 });
 
 Auth::routes();
