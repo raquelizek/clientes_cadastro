@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Schema;
 class ClienteTable extends Migration
 {
     /**
-     * Run the migrations.
+     * Rodar as migrations.
      *
      * @return void
      */
@@ -26,7 +26,7 @@ class ClienteTable extends Migration
     }
 
     /**
-     * Reverse the migrations.
+     * Reverter as migrations.
      *
      * @return void
      */

@@ -2,7 +2,6 @@
 
 @section('content')
 
-
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-10">
@@ -10,14 +9,12 @@
                 <div class="card-header d-flex justify-content-between align-items-center">{{ __('Lista de Clientes') }}
                     <form action="/inicio" method="get">
                         <div class="input-group input-group-alternative input-group-merge">
-
                             <div class="p-2">
                                 <a href="/cadastro-usuario" button type="button" class="btn btn-primary ">Cadastrar Novo Usuário</a>
                             </div>
                             <div class="p-2">
                                 <input class="form-control mr-sm-3" name="pesquisar" placeholder="Pesquisar" type="text">
                             </div>
-
                         </div>
                     </form>
                 </div>

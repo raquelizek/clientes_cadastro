@@ -1,6 +1,7 @@
 @extends('layouts.app1')
 
 @section('content')
+
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-10">
@@ -10,7 +11,9 @@
                 <div class="card-body">
                     <form action="/cadastro-usuario/{{@$clientes->cliente_ID}}/update" method="post">
                         @csrf
+                        <!-- Proteção CSRF-->
                         @method('PUT')
+                        <!-- Definindo o método do form-->
                         <div class="d-flex flex-row-reverse">
                             <button type="submit" class="btn btn-primary">Salvar</button>
                         </div>
